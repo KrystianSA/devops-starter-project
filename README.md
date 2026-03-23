@@ -1,2 +1,12 @@
-# devops-starter-project
-Starter DevOps project focused on CI/CD, automation, and cloud deployment. Includes basic pipeline implementation using GitHub Actions.
+# DevOps Starter Project
+
+This project demonstrates a basic CI pipeline using GitHub Actions.
+
+## Features
+- Automated pipeline triggered on push
+- Python environment setup
+- Automatic script execution
+
+## Tech stack
+- GitHub Actions
+- Python
