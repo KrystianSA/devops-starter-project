@@ -21,7 +21,7 @@ jobs:
         run: |
           pip install -r requirements.txt || echo "No requirements file"
 
-      - name: Build step
+      - name: Build application
         run: |
           echo "Building application..."
 
@@ -34,5 +34,12 @@ jobs:
             echo "Test failed" && exit 1
           fi
 
+      - name: Build Docker image
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          push: false
+          tags: devops-app:latest
+          
       - name: Run application
         run: python app.py
