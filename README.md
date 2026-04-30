@@ -1,47 +1,38 @@
-# DevOps Starter Project
+# Azure DevOps App Deployment
 
-![CI](https://github.com/KrystianSA/devops-starter-project/actions/workflows/ci.yml/badge.svg)
+This project demonstrates a real-world DevOps workflow for deploying a containerized application to Microsoft Azure using Infrastructure as Code and CI/CD pipelines.
 
-This project demonstrates a practical DevOps workflow including CI/CD, containerization, and Infrastructure as Code.
+## 🚀 What this project does
+- Builds and tests a Python application
+- Containerizes the app using Docker
+- Deploys infrastructure on Azure using Terraform
+- Automates the deployment with GitHub Actions
 
----
-
-## 🚀 Features
-
-- CI/CD pipeline using GitHub Actions triggered on each commit  
-- Multi-stage pipeline: build → test → Docker build → run  
-- Docker image build integrated into CI pipeline  
-- Infrastructure provisioning using Terraform (Azure)  
-
----
+## 🧱 Architecture
+- GitHub Actions → CI/CD pipeline
+- Docker → application containerization
+- Terraform → Azure infrastructure provisioning
+- Azure → hosting environment
 
 ## 🧰 Tech Stack
-
-- GitHub Actions (CI/CD)
-- Docker (containerization)
-- Terraform (Infrastructure as Code)
 - Microsoft Azure
+- Terraform (Infrastructure as Code)
+- Docker
+- GitHub Actions (CI/CD)
 - Python
 
----
-
 ## ⚙️ CI/CD Pipeline
+Pipeline is triggered on every push:
+1. Checkout repository
+2. Setup Python environment
+3. Run validation/tests
+4. Build Docker image
+5. (Future) Push image to Azure Container Registry
+6. (Future) Deploy to Azure
 
-The pipeline is automatically triggered on each push and performs:
+## 🔐 Security considerations
+- Infrastructure managed via code (Terraform)
+- Secrets should be stored in GitHub Secrets / Azure Key Vault
 
-1. Checkout code  
-2. Setup Python environment  
-3. Build step  
-4. Run basic validation tests  
-5. Build Docker image  
-6. Run application  
-
----
-
-## 🐳 Docker
-
-Application is containerized using Docker.
-
-Build locally:
-```bash
-docker build -t devops-app .
+## 📌 Status
+Project in progress – extending with full Azure deployment and monitoring
