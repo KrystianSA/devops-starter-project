@@ -1,6 +1,6 @@
 # Azure DevOps App Deployment
 
-This project demonstrates a real-world DevOps workflow for deploying a containerized application to Microsoft Azure using Infrastructure as Code and CI/CD pipelines.
+This project demonstrates a real-world DevOps workflow for deploying a resources to Microsoft Azure using Infrastructure as Code and CI/CD pipelines.
 
 ## 🚀 What this project does
 - Builds and tests a Python application
