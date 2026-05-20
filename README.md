@@ -2,6 +2,13 @@
 
 This project demonstrates a real-world DevOps workflow for deploying a resources to Microsoft Azure using Infrastructure as Code and CI/CD pipelines.
 
+## Table of contents 
+- [Github Actions](.github/workflows)
+- [Kubernetes](kubernetes)
+- [Terraform](terraform)
+- [Docker](Dockerfile)
+
+
 ## 🚀 What this project does
 - Builds and tests a Python application
 - Containerizes the app using Docker
